@@ -1,0 +1,40 @@
+<!--Il faudra donner des indices : passer des paramètres sur le click...-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les savoirs inutiles</title>
+    <link rel="stylesheet" type="text/css" href="SavoirInutile.css">
+</head>
+<body>
+<div id="form">
+    <h1>Les savoirs inutiles</h1>
+    <div>
+        <label for="libelleSavoir">Savoir :</label><input type="text" id="libelleSavoir">
+    </div>
+    <div><label for="auteur">Auteur :</label><input type="text" id="auteur">
+    </div>
+    <div><label for="date">Date :</label><input type="date" id="date">
+    </div>
+    <div>
+        <button id="btnAdd">Ajouter</button>
+    </div>
+</div>
+
+<div id="divResultat">
+    <ol id="olListeSavoir">
+
+    </ol>
+    <!-- Module 3 -- TP1 -- STEP 2 -- Ajout de cette div pour gérer les boutons de tri -->
+    <!-- Module 3 -- TP 2 -- Gestion des évènements dans le contrôlleur -->
+    <div id="btnTri" style="visibility: hidden">
+        <button id="a_az">Tri par auteur - A=>Z</button>
+        <button id="a_za">Tri par auteur - Z=>A</button>
+        <button id="d_ra">Tri par date - Récent=>Ancien</button>
+        <button id="d_ar">Tri par date - Ancien=>Récent</button>
+    </div>
+</div>
+<script src="ControlleurSI.js" type="module"></script>
+
+</body>
+</html>

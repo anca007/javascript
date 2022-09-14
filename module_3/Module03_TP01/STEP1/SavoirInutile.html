@@ -1,0 +1,30 @@
+<!--Il faudra donner des indices : passer des paramètres sur le click...-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les savoirs inutiles</title>
+    <script src="SavoirInutile.js"></script>
+    <link rel="stylesheet" type="text/css" href="SavoirInutile.css">
+</head>
+<body>
+<div id="form">
+    <h1>Les savoirs inutiles</h1>
+    <div>
+        <label for="libelleSavoir">Savoir :</label><input type="text" id="libelleSavoir">
+    </div>
+    <div><label for="auteur">Auteur :</label><input type="text" id="auteur">
+    </div>
+    <div><label for="date">Date :</label><input type="date" id="date">
+    </div>
+    <div>
+        <button onclick="ajouter()">Ajouter</button>
+    </div>
+</div>
+<div id="divResultat">
+    <ol id="olListeSavoir">
+
+    </ol>
+</div>
+</body>
+</html>

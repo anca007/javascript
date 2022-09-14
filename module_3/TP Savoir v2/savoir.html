@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<div>
+    <label for="knowledge">Savoir : </label><input type="text" id="knowledge">
+</div>
+<div>
+    <label for="author">Auteur : </label><input type="text" id="author">
+</div>
+<div>
+    <label for="date">Date : </label><input type="date" id="date">
+</div>
+<button id="add" onclick="controleur.addKnowledge()">Ajouter</button>
+<button id="sortByAuthor" onclick="controleur.sortByAuthor()">Tri par auteur</button>
+<button  id="sortByDate" onclick="controleur.sortByDate()">Tri par date</button>
+
+
+<ol id="list"></ol>
+
+
+<script src="bo.js"></script>
+<script src="serviceLocalStorage.js"></script>
+<script src="controleur.js"></script>
+</body>
+</html>

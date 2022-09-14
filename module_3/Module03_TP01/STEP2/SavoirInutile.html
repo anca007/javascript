@@ -1,0 +1,38 @@
+<!--Il faudra donner des indices : passer des paramètres sur le click...-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les savoirs inutiles</title>
+    <script src="SavoirInutile.js"></script>
+    <link rel="stylesheet" type="text/css" href="SavoirInutile.css">
+</head>
+<body>
+<div id="form">
+    <h1>Les savoirs inutiles</h1>
+    <div>
+        <label for="libelleSavoir">Savoir :</label><input type="text" id="libelleSavoir">
+    </div>
+    <div><label for="auteur">Auteur :</label><input type="text" id="auteur">
+    </div>
+    <div><label for="date">Date :</label><input type="date" id="date">
+    </div>
+    <div>
+        <button onclick="ajouter()">Ajouter</button>
+    </div>
+</div>
+
+<div id="divResultat">
+    <ol id="olListeSavoir">
+
+    </ol>
+    <!--STEP 2 -- Ajout de cette div pour gérer les boutons de tri -->
+    <div id="btnTri" style="visibility: hidden">
+        <input type="button" onClick="trier('a_az');" value="Tri par auteur - A=>Z">
+        <input type="button" onClick="trier('a_za');" value="Tri par auteur - Z=>A">
+        <input type="button" onClick="trier('d_ra');" value="Tri par date - Récent=>Ancien">
+        <input type="button" onClick="trier('d_ar');" value="Tri par date - Ancien=>Récent">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="savoir.js"></script>
+</head>
+<body>
+
+<div>
+    <label for="knowledge">Savoir : </label><input type="text" id="knowledge">
+</div>
+<div>
+    <label for="author">Auteur : </label><input type="text" id="author">
+</div>
+<div>
+    <label for="date">Date : </label><input type="date" id="date">
+</div>
+<button id="add" onclick="addKnowledge()">Ajouter</button>
+<button id="sortByAuthor" onclick="sortByAuthor()">Tri par auteur</button>
+<button  id="sortByDate" onclick="sortByDate()">Tri par date</button>
+
+
+<ol id="list"></ol>
+
+
+</body>
+</html>
